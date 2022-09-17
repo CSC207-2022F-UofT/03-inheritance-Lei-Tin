@@ -105,7 +105,7 @@ public abstract class Bag {
         }
         else {
             this.numberOfContents--;
-            return contents[this.numberOfContents];
+            return contents[this.numberOfContents + 1];
         }
     }
 
