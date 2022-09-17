@@ -117,6 +117,13 @@ public abstract class Bag {
      */
     public void increaseCapacity(int n) {
         // Implement this method
+        String[] new_contents = new String[this.capacity + 1];
+
+        for (int i = 0; i < this.capacity; i++) {
+            new_contents[i] = this.contents[i];
+        }
+
+        this.contents = new_contents;
         this.capacity += n;
     }
 
